@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+/* Basic Reset */
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px; 
+}
+
+html,body{
+    height: 100vh;
+}
+
+/* Reusuable styles */
+.container{
+    height: 100vh;
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: #071a52;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.title{
+    font-size: 5rem;
+    margin: 1rem 0;
+    padding: 2rem 0;
+}
+
+.up, .down{
+    margin: 1rem 3rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-size: 2rem;
+    background-image: linear-gradient(to left, #17b978, #086972);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.up .fas{
+    color: yellowgreen;
+}
+
+.down .fas{
+    color: crimson;
+}
+
+.up:hover, .down:hover{
+    background-image: linear-gradient(to right, #17b978, #086972);
+}
+
+.reset .fas{
+    margin: 0 1rem;
+    color: tomato;
+}
+
+.settings{
+    margin: 2rem 0;
+}
+
+.allow-neg-label{
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.5rem;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Counter - Using Plain JS</title>
+</head>
+<body>
+    <main class="hero">
+        <div class="container">
+            <h1 class="title">Counter:<span class="dynamic">0</span></h1>
+            <div class="button">
+                <button class="down">Decrease <i class="fas fa-caret-square-down"></i></button>
+                <button class="up">Increase <i class="fas fa-caret-square-up"></i></button>
+            </div>
+            <div class="reset-btn">
+                <button class="reset up">Reset<i class="fas fa-times"></i></button>
+            </div>
+            <div class="settings">
+                <label class="allow-neg-label" for="allow-neg">Allow negative numbers</label>
+                <input class="allow-neg" type="checkbox" name="allow-negative" id="allow-neg" >
+            </div>
+        </div>
+    </main>
+
+    <script defer src="./script.js"></script>
+</body>
+</html>
