@@ -6,11 +6,13 @@ const allowNeg = document.querySelector('.allow-neg')
 
 var inc = 0;
 
+//Increase the counter
 up.addEventListener('click', ()=>{
     inc++;
     count.innerText = `${inc}`
 })
 
+//Decrease the counter
 down.addEventListener('click', ()=>{
     if(allowNeg.checked == true){
         inc--;
@@ -24,6 +26,7 @@ down.addEventListener('click', ()=>{
     }
 })
 
+//Reset the counter
 reset.addEventListener('click', ()=>{
     inc = 0
     count.innerText = `${inc}`
